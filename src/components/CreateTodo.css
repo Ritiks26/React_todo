@@ -1,0 +1,37 @@
+.todo-parent-container {
+  background-color: rgb(255, 255, 255);
+
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.35);
+  height: 60vh;
+  width: 100%;
+  padding: 0rem 1rem;
+  z-index: 20;
+  position: fixed;
+  left: 0%;
+  right: 0%;
+  bottom: -200%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  overflow-y: auto;
+}
+
+.expiring-task-message {
+  font-size: 1.25rem;
+}
+
+/* .todo-parent-container > * {
+  border: 1px solid;
+} */
+
+.tasks-container {
+  padding: 0rem;
+}
+
+.tasks-container h1 {
+  font-size: 1rem;
+  font-family: satoshi;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+  color: rgb(154, 154, 154);
+}

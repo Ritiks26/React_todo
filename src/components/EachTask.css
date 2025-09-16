@@ -1,0 +1,67 @@
+.delete-tasks-message {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.delete-tasks-message p {
+  font-size: 1.25rem;
+  color: rgb(91, 91, 91);
+}
+
+.delete-tasks-message span {
+  font-size: 1rem;
+  color: rgb(91, 91, 91);
+}
+
+.delete-tasks-message strong {
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
+}
+
+.each-task p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.see-more-tasks {
+  text-align: center;
+  margin: 0;
+}
+
+.see-more-tasks-link {
+  color: black;
+  text-decoration: underline;
+  font-size: 1.05rem;
+  margin-right: 0.25rem;
+}
+
+.each-task {
+  border-radius: 12px;
+  width: 100%;
+  background-color: whitesmoke;
+  padding: 1rem 0.65rem;
+  margin: 0.5rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 0.75rem;
+  overflow: hidden;
+}
+
+.todo {
+  flex: 1;
+
+  /* word-break: break-all;
+  overflow-wrap: break-word;
+  white-space: normal; */
+}
+
+.due-date {
+  font-size: 0.75rem;
+  flex-shrink: 0;
+  white-space: nowrap;
+  color: purple;
+  background-color: rgba(128, 0, 128, 0.183);
+  padding: 0.25rem 0.5rem;
+  border-radius: 8px;
+}
