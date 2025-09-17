@@ -1,10 +1,12 @@
-import addIcon from "../../assets/svg/plus-icon.svg";
+import addIcon from "../../assets/svg/chevron-left.svg";
 import "./AddTask.css";
 
-export function AddTask({ handleClick, addTaskImageRef }) {
+export function AddTask({ handleClickView }) {
   return (
-    <div className="add-task-button" onClick={handleClick}>
-      <img ref={addTaskImageRef} src={addIcon} alt="" />
+    <div className="add-task-container">
+      <div className="add-task-button" onClick={handleClickView}>
+        <img src={addIcon} alt="" />
+      </div>
     </div>
   );
 }

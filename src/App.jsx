@@ -27,7 +27,7 @@ function App() {
   }, [pathname]);
 
   return (
-    <>
+    <div className="app-container">
       <Routes>
         <Route
           path="/"
@@ -50,7 +50,7 @@ function App() {
           }
         />
       </Routes>
-    </>
+    </div>
   );
 }
 

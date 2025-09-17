@@ -8,8 +8,6 @@ export function HeadingTop() {
   const currentMonth = date.toLocaleString("default", { month: "long" });
   const currentyear = date.getFullYear();
 
-  console.log(currentDate, currentMonth, currentyear);
-
   return (
     <div className="heading-projects-container">
       <div className="heading-user-details">

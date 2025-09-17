@@ -27,7 +27,7 @@ export function EachTask({ tasks, getTimeLeft }) {
       {tasks.length > 4 && (
         <div className="see-more-tasks">
           <Link className="see-more-tasks-link" to={"/Add-todo"}>
-            view all
+            ALL TASKS
           </Link>
         </div>
       )}

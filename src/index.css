@@ -5,6 +5,6 @@
 body {
   font-family: satoshi;
   padding: 0rem;
-  margin: 0rem 0.75rem;
-  position: relative;
+  margin: 0rem 0.5rem;
+  height: 100dvh;
 }

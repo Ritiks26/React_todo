@@ -52,7 +52,7 @@ export function AddTodo({ setTasks, tasks, getTimeLeft }) {
           <Link to={"/"}>
             <img src={backArrow} alt="" />
           </Link>
-        </div>
+        </div>{" "}
       </div>
 
       <div className="input-and-task-container">
