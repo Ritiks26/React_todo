@@ -71,12 +71,11 @@ export function TodoInput({ tasks, setTasks }) {
             className="date-picker"
             ref={datePickerRef}
             selected={dueDate}
-            onChange={(date) => {
-              setDueDate(date);
-            }}
+            onChange={(date) => setDueDate(date)}
             showTimeSelect
             dateFormat="Pp"
-            popperPlacement="top-start"
+            withPortal
+            popperPlacement="top"
           />
         </div>
       </div>

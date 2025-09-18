@@ -1,7 +1,7 @@
 .add-task-button {
   height: 55px;
   width: 55px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   backdrop-filter: blur(2px);
   display: flex;
   align-items: center;
@@ -9,8 +9,8 @@
   border-radius: 50%;
   border: 1px solid lightgray;
   position: fixed;
-  bottom: 5%;
-  right: 10%;
+  bottom: 1rem;
+  right: 1rem;
   z-index: 10;
 }
 

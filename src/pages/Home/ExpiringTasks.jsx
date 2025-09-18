@@ -1,4 +1,3 @@
-import { g } from "framer-motion/client";
 import menu from "../../assets/svg/hamburger-menu.svg";
 import { CreateTodo } from "../../components/CreateTodo";
 import "./ExpiringTasks.css";

@@ -3,6 +3,7 @@
 }
 
 body {
+  position: relative;
   font-family: satoshi;
   padding: 0rem;
   margin: 0rem 0.5rem;
