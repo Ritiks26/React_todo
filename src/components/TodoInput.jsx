@@ -75,7 +75,7 @@ export function TodoInput({ tasks, setTasks }) {
             showTimeSelect
             dateFormat="Pp"
             withPortal
-            popperPlacement="top"
+            popperPlacement="top-end"
           />
         </div>
       </div>

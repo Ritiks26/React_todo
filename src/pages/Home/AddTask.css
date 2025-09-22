@@ -1,3 +1,14 @@
+.add-task-container {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+
+  @media (width > 500px) {
+    bottom: 3rem;
+    right: 32rem;
+  }
+}
+
 .add-task-button {
   height: 55px;
   width: 55px;
@@ -8,9 +19,7 @@
   justify-content: center;
   border-radius: 50%;
   border: 1px solid lightgray;
-  position: fixed;
-  bottom: 1rem;
-  right: 1rem;
+
   z-index: 10;
 }
 
