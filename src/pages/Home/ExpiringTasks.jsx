@@ -1,8 +1,20 @@
+import { string } from "prop-types";
 import menu from "../../assets/svg/hamburger-menu.svg";
 import { CreateTodo } from "../../components/CreateTodo";
 import "./ExpiringTasks.css";
 
-export function ExpiringTasks({ tasks, setTasks, getTimeLeft }) {
+export function ExpiringTasks({ tasks, setTasks, Countdown }) {
+  const expiringSoon = tasks.filter((task) => {
+    if (!task.dueDate) return false;
+
+    const now = new Date();
+    const due = new Date(task.dueDate);
+
+    const diff = due - now;
+
+    return diff > 0 && diff <= 6 * 60 * 60 * 1000;
+  });
+
   return (
     <>
       <div className="quotes-container">
@@ -40,16 +52,16 @@ export function ExpiringTasks({ tasks, setTasks, getTimeLeft }) {
         </div>
       </div>
 
-      {tasks.length === 0 ? (
-        <p className="expiring-task-message">No! Expiring tasks.</p>
+      {expiringSoon.length === 0 ? (
+        <p className="expiring-task-message">No tasks expiring in 6 hours.</p>
       ) : (
-        tasks.slice(0, 4).map((task, index) => (
+        expiringSoon.map((task, index) => (
           <div key={index} className="filtered-task">
             <div className="task-details">
               {" "}
               <p className="task-name">{task.tasks}</p>
               <p className="task-timer">
-                {getTimeLeft(task.dueDate)}
+                <Countdown dueDate={task.dueDate} />
                 <br /> <span>TASK EXPIRING SOON.</span>
               </p>
             </div>
@@ -59,7 +71,7 @@ export function ExpiringTasks({ tasks, setTasks, getTimeLeft }) {
           </div>
         ))
       )}
-      <CreateTodo tasks={tasks} setTasks={setTasks} getTimeLeft={getTimeLeft} />
+      <CreateTodo tasks={tasks} setTasks={setTasks} Countdown={Countdown} />
     </>
   );
 }

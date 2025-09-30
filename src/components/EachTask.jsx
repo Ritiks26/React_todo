@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { motion, useAnimation } from "framer-motion";
 import "./EachTask.css";
 
-function TaskItem({ onDelete, task, getTimeLeft }) {
+function TaskItem({ onDelete, task, Countdown }) {
   const controls = useAnimation();
 
   return (
@@ -32,13 +32,15 @@ function TaskItem({ onDelete, task, getTimeLeft }) {
         <p>{task.tasks}</p>
       </div>
       <div className="due-date">
-        <p>{getTimeLeft(task.dueDate)}</p>
+        <p>
+          <Countdown dueDate={task.dueDate} />
+        </p>
       </div>
     </motion.div>
   );
 }
 
-export function EachTask({ tasks, setTasks, getTimeLeft }) {
+export function EachTask({ tasks, setTasks, Countdown }) {
   const deleteTodo = (id) => {
     setTasks(tasks.filter((task) => task.id !== id));
   };
@@ -59,7 +61,7 @@ export function EachTask({ tasks, setTasks, getTimeLeft }) {
               key={task.id}
               onDelete={deleteTodo}
               task={task}
-              getTimeLeft={getTimeLeft}
+              Countdown={Countdown}
             />
           ))
       )}

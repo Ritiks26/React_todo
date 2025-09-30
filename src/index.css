@@ -9,3 +9,22 @@ body {
   margin: 0rem 0.5rem;
   height: 100dvh;
 }
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  inset: 0;
+  z-index: 99;
+  background-color: black;
+}
+
+.loader h3 {
+  color: white;
+  margin: 0rem 0rem;
+  font-weight: 400;
+}

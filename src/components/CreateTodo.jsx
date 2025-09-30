@@ -6,7 +6,7 @@ import removeIcon from "../assets/svg/chevron-left.svg";
 import gsap from "gsap";
 import "./CreateTodo.css";
 
-export function CreateTodo({ tasks, setTasks, getTimeLeft }) {
+export function CreateTodo({ tasks, setTasks, Countdown }) {
   const todoTaskRef = useRef(null);
 
   const handleClickView = () => {
@@ -36,11 +36,7 @@ export function CreateTodo({ tasks, setTasks, getTimeLeft }) {
             <img src={removeIcon} alt="" />
           </div>
           <h1>TASKS</h1>
-          <EachTask
-            tasks={tasks}
-            setTasks={setTasks}
-            getTimeLeft={getTimeLeft}
-          />
+          <EachTask tasks={tasks} setTasks={setTasks} Countdown={Countdown} />
         </div>
 
         <TodoInput tasks={tasks} setTasks={setTasks} />
