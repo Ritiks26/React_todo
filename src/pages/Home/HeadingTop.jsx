@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 import taskIcon from "../../assets/svg/tasks.svg";
 import "./HeadingTop.css";
+import { func } from "prop-types";
 
 export function HeadingTop() {
+  const formatDate = (date) => String(date ?? 0).padStart(2, "0");
   const date = new Date();
   const currentDate = date.getDate();
   const currentMonth = date.toLocaleString("default", { month: "long" });
@@ -15,7 +17,7 @@ export function HeadingTop() {
         <div className="user-project">
           <div className="date-container">
             <div>
-              <h1 className="date">{currentDate}</h1>
+              <h1 className="date">{formatDate(currentDate)}</h1>
             </div>
             <div className="day-year">
               <p className="day">{currentMonth}</p>

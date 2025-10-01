@@ -6,6 +6,7 @@
 
   @media (width >= 500px) {
     padding: 0rem 1rem;
-    border: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
   }
 }
