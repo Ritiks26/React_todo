@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import taskIcon from "../../assets/svg/tasks.svg";
 import "./HeadingTop.css";
-import { func } from "prop-types";
 
 export function HeadingTop() {
   const formatDate = (date) => String(date ?? 0).padStart(2, "0");
@@ -23,11 +22,6 @@ export function HeadingTop() {
               <p className="day">{currentMonth}</p>
               <p className="year">{currentyear}</p>
             </div>
-          </div>
-          <div className="all-lists">
-            <Link to={"/add-todo"}>
-              <img src={taskIcon} alt="" />
-            </Link>
           </div>
         </div>
       </div>
