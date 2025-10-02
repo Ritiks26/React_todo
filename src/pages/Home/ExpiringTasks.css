@@ -1,10 +1,14 @@
 .filtered-task {
   position: relative;
-  min-height: 25vh;
+  min-height: 20vh;
   width: 100%;
-  padding: 2rem 1rem;
+  padding: 0rem 1rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
   /* background: radial-gradient(circle at center, #141e30, #243b55); */
   background-color: rgba(0, 0, 0, 0.868);
+  background-color: #cbd87d;
+  background-color: #a6a0d2;
   border-radius: 30px;
   overflow: hidden;
   margin: 0.25rem 0rem;
@@ -18,20 +22,16 @@
 
 .task-name,
 .task-timer {
-  width: 95%;
+  width: 90%;
   color: rgb(255, 255, 255);
-  font-size: 1.85rem;
-  font-weight: bolder;
-  letter-spacing: 0.095rem;
-
+  font-size: 1.5rem;
+  font-weight: 500;
   margin: 0;
 }
 
 .task-timer {
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin: 0rem 0rem;
-  color: rgb(240, 27, 27);
-  letter-spacing: 0rem;
   font-weight: 500;
 }
 
@@ -52,7 +52,7 @@
   border-radius: 50%;
   top: 4%;
   right: 2%;
-  border: 1px solid white;
+  background-color: white;
 }
 
 .menu-button img {
