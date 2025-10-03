@@ -1,19 +1,15 @@
 .filtered-task {
   position: relative;
-  min-height: 20vh;
+  min-height: 22vh;
   width: 100%;
-  padding: 0rem 1rem;
+  padding: 0rem 1.5rem;
   padding-top: 2rem;
   padding-bottom: 1rem;
-  /* background: radial-gradient(circle at center, #141e30, #243b55); */
-  background-color: rgba(0, 0, 0, 0.868);
   background-color: #cbd87d;
   background-color: #a6a0d2;
   border-radius: 30px;
   overflow: hidden;
   margin: 0.25rem 0rem;
-
-  border: 1px solid lightgray;
 }
 
 .task-details {
@@ -22,6 +18,7 @@
 
 .task-name,
 .task-timer {
+  font-family: satoshi;
   width: 90%;
   color: rgb(255, 255, 255);
   font-size: 1.5rem;
@@ -29,15 +26,19 @@
   margin: 0;
 }
 
+.task-name {
+  line-height: 2.25rem;
+}
+
 .task-timer {
   font-size: 1rem;
-  margin: 0rem 0rem;
+  margin: 0.5rem 0rem;
   font-weight: 500;
 }
 
 .task-timer span {
   font-size: 0.7rem;
-  letter-spacing: 0.15rem;
+  letter-spacing: 0.1rem;
   /* font-weight: 500; */
 }
 

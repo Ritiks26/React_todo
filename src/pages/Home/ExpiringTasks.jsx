@@ -62,7 +62,7 @@ export function ExpiringTasks({ tasks, setTasks, Countdown }) {
               <p className="task-name">{task.tasks}</p>
               <p className="task-timer">
                 <Countdown dueDate={task.dueDate} />
-                <br /> <span>TASK EXPIRING SOON.</span>
+                <br /> <span>TASK ENDING SOON.</span>
               </p>
             </div>
             <div className="menu-button">
