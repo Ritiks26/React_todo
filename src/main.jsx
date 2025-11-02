@@ -13,14 +13,14 @@ function Loader() {
     const tl = gsap.timeline();
 
     tl.from(loaderRef.current.querySelectorAll("h3"), {
-      x: 40,
+      y: 60,
       opacity: 0,
       duration: 1,
       stagger: 0.2,
     });
     tl.to(loaderRef.current.querySelectorAll("h3"), {
       opacity: 0,
-      x: -20,
+      y: -10,
       duration: 1,
       stagger: 0.2,
     });
@@ -36,9 +36,11 @@ function Loader() {
 
   return (
     <div ref={loaderRef} className="loader">
-      <h3>Brainstorm,</h3>
-      <h3>Create,</h3>
-      <h3>Execute</h3>
+      <div style={{ display: "flex", gap: "0.5rem", overflow: "hidden" }}>
+        <h3>Brainstorm,</h3>
+        <h3>Create,</h3>
+        <h3>Execute</h3>
+      </div>
     </div>
   );
 }
